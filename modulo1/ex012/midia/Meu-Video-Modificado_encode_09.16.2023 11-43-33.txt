@@ -1,0 +1,245 @@
+HandBrake 1.6.1 (2023012300)
+OS: Microsoft Windows NT 10.0.19044.0
+CPU: AMD Ryzen 5 5600 6-Core Processor              
+Ram: 32694 MB, 
+GPU Information:
+  AMD Radeon RX 5600 XT - 31.0.21023.2010
+Screen: 1920x1080
+Temp Dir: C:\Users\Saskaroth\AppData\Local\Temp\
+Install Dir: C:\Program Files\HandBrake\
+Data Dir: C:\Users\Saskaroth\AppData\Roaming\HandBrake
+
+-------------------------------------------
+
+ # Starting Encode ...
+
+[11:43:33] base preset: Very Fast 720p30
+[11:43:34] Remote Process started with Process ID: 8812 using port: 8037. Max Allowed Instances: 1
+[11:43:34] Worker: Starting HandBrake Engine ...
+[11:43:34] Worker: Starting Web Server on port 8037 ...
+[11:43:34] Worker: Disconnected worker monitoring enabled!
+[11:43:34] Compile-time hardening features are enabled
+[11:43:34] qsv: not available on this system
+[11:43:34] vcn: is available
+Cannot load nvEncodeAPI64.dll
+bhb thread
+[11:43:34] Starting work at: Sat Sep 16 11:43:34 2023
+[11:43:34] 1 job(s) to process
+[11:43:34] json job:
+{
+  "Audio": {
+    "AudioList": [],
+    "CopyMask": [
+      "copy:aac"
+    ]
+  },
+  "Destination": {
+    "ChapterList": [
+      {
+        "Name": "Cap\u00EDtulo 1"
+      }
+    ],
+    "ChapterMarkers": true,
+    "AlignAVStart": true,
+    "File": "C:\\Users\\Saskaroth\\Videos\\Meu-Video-Modificado.Mp4",
+    "Mp4Options": {
+      "IpodAtom": false,
+      "Mp4Optimize": false
+    },
+    "Mux": "av_mp4"
+  },
+  "Filters": {
+    "FilterList": [
+      {
+        "ID": 4,
+        "Settings": {
+          "mode": "7"
+        }
+      },
+      {
+        "ID": 3,
+        "Settings": {
+          "block-height": "16",
+          "block-thresh": "80",
+          "block-width": "16",
+          "filter-mode": "1",
+          "mode": "0",
+          "motion-thresh": "2",
+          "spatial-metric": "2",
+          "spatial-thresh": "3"
+        }
+      },
+      {
+        "ID": 14,
+        "Settings": {
+          "crop-bottom": "0",
+          "crop-left": "0",
+          "crop-right": "0",
+          "crop-top": "0",
+          "height": "720",
+          "width": "1280"
+        }
+      },
+      {
+        "ID": 7,
+        "Settings": {
+          "mode": "2",
+          "rate": "27000000/900000"
+        }
+      }
+    ]
+  },
+  "PAR": {
+    "Num": 1,
+    "Den": 1
+  },
+  "Metadata": {},
+  "SequenceID": 0,
+  "Source": {
+    "Angle": 1,
+    "Range": {
+      "Type": "chapter",
+      "Start": 1,
+      "End": 1
+    },
+    "Title": 1,
+    "Path": "C:\\Saskaroth\\ADS\\Curso em Video\\html-css\\exercicios\\ex012\\midia\\meu-video.mp4.mp4"
+  },
+  "Subtitle": {
+    "Search": {
+      "Burn": true,
+      "Default": false,
+      "Enable": true,
+      "Forced": true
+    },
+    "SubtitleList": []
+  },
+  "Video": {
+    "Encoder": "x264",
+    "Level": "3.1",
+    "TwoPass": false,
+    "Turbo": false,
+    "ColorMatrixCode": 0,
+    "Options": "",
+    "Preset": "veryfast",
+    "Profile": "main",
+    "Quality": 23,
+    "QSV": {
+      "Decode": false
+    },
+    "HardwareDecode": 0
+  }
+}
+[11:43:34] CPU: AMD Ryzen 5 5600 6-Core Processor
+[11:43:34]  - logical processor count: 12
+[11:43:34] Intel Quick Sync Video support: no
+[11:43:34] hb_scan: path=C:\Saskaroth\ADS\Curso em Video\html-css\exercicios\ex012\midia\meu-video.mp4.mp4, title_index=1
+udfread ERROR: ECMA 167 Volume Recognition failed
+src/libbluray/disc/disc.c:333: failed opening UDF image C:\Saskaroth\ADS\Curso em Video\html-css\exercicios\ex012\midia\meu-video.mp4.mp4
+src/libbluray/disc/disc.c:437: error opening file BDMV\index.bdmv
+src/libbluray/disc/disc.c:437: error opening file BDMV\BACKUP\index.bdmv
+[11:43:34] bd: not a bd - trying as a stream/file instead
+libdvdread: Encrypted DVD support unavailable.
+liblibdvdread: DVDOpenFileUDF:UDFFindFile /VIDEO_TS/VIDEO_TS.IFO failed
+dvdread: Can't open file VIDEO_TS.IFO.
+libdvdnav: vm: vm: failed to read VIDEO_TS.IFO
+[11:43:34] dvd: not a dvd - trying as a stream/file instead
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'C:\Saskaroth\ADS\Curso em Video\html-css\exercicios\ex012\midia\meu-video.mp4.mp4':
+  Metadata:
+    major_brand     : qt
+    minor_version   : 0
+    compatible_brands: qt
+    creation_time   : 2020-02-07T22:53:04.000000Z
+    com.apple.quicktime.keywords: Bog
+    com.apple.quicktime.description: Este vÇðdeo trata de: monserrate 2
+    com.apple.quicktime.author: Ricardo Perez
+    com.apple.quicktime.displayname: monserrate 2
+    com.apple.quicktime.title: monserrate 2
+  Duration: 00:00:41.14, start: 0.000000, bitrate: 15705 kb/s
+  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1920x1080 [SAR 1:1 DAR 16:9], 15666 kb/s, 29.97 fps, 29.97 tbr, 30k tbn (default)
+    Metadata:
+      creation_time   : 2020-02-07T22:53:04.000000Z
+      handler_name    : Core Media Video
+      vendor_id       : [0][0][0][0]
+      encoder         : H.264
+      timecode        : 00:00:00:00
+  Stream #0:1[0x2](und): Data: none (tmcd / 0x64636D74) (default)
+    Metadata:
+      creation_time   : 2020-02-07T22:53:04.000000Z
+      handler_name    : Core Media Time Code
+      timecode        : 00:00:00:00
+[11:43:35] scan: decoding previews for title 1
+[11:43:35] scan: 10 previews, 1920x1080, 29.970 fps, autocrop = 0/0/0/0, aspect 16:9, PAR 1:1, color profile: 1-1-1, chroma location: left
+[11:43:35] libhb: scan thread found 1 valid title(s)
+[11:43:35] Skipping subtitle scan.  No suitable subtitle tracks.
+[11:43:35] Starting Task: Encoding Pass
+[11:43:35] work: only 1 chapter, disabling chapter markers
+[11:43:35] job configuration:
+[11:43:35]  * source
+[11:43:35]    + C:\Saskaroth\ADS\Curso em Video\html-css\exercicios\ex012\midia\meu-video.mp4.mp4
+[11:43:35]    + title 1, chapter(s) 1 to 1
+[11:43:35]    + container: mov,mp4,m4a,3gp,3g2,mj2
+[11:43:35]    + data rate: 15705 kbps
+[11:43:35]  * destination
+[11:43:35]    + C:\Users\Saskaroth\Videos\Meu-Video-Modificado.Mp4
+[11:43:35]    + container: MPEG-4 (libavformat)
+[11:43:35]      + align initial A/V stream timestamps
+[11:43:35]  * video track
+[11:43:35]    + decoder: h264 8-bit (yuv420p)
+[11:43:35]      + bitrate 15666 kbps
+[11:43:35]    + filters
+[11:43:35]      + Comb Detect (mode=0:spatial-metric=2:motion-thresh=2:spatial-thresh=3:filter-mode=1:block-thresh=80:block-width=16:block-height=16)
+[11:43:35]      + Decomb (mode=39)
+[11:43:35]      + Framerate Shaper (mode=2:rate=27000000/900000)
+[11:43:35]        + frame rate: 29.970 fps -> peak rate limited to 30.000 fps
+[11:43:35]      + Crop and Scale (width=1280:height=720:crop-top=0:crop-bottom=0:crop-left=0:crop-right=0)
+[11:43:35]        + source: 1920 * 1080, crop (0/0/0/0): 1920 * 1080, scale: 1280 * 720
+[11:43:35]    + Output geometry
+[11:43:35]      + storage dimensions: 1280 x 720
+[11:43:35]      + pixel aspect ratio: 1 : 1
+[11:43:35]      + display dimensions: 1280 x 720
+[11:43:35]    + encoder: H.264 (libx264)
+[11:43:35]      + preset:  veryfast
+[11:43:35]      + profile: main
+[11:43:35]      + level:   3.1
+[11:43:35]      + quality: 23.00 (RF)
+[11:43:35]      + color profile: 1-1-1
+[11:43:35]      + chroma location: left
+[11:43:35] sync: expecting 1233 video frames
+[11:43:35] encx264: min-keyint: 30, keyint: 300
+[11:43:35] encx264: encoding at constant RF 23.000000
+[11:43:35] encx264: unparsed options: level=3.1:ref=1:8x8dct=0:weightp=1:subme=2:mixed-refs=0:trellis=0:vbv-bufsize=14000:vbv-maxrate=14000:rc-lookahead=10
+x264 [info]: using SAR=1/1
+x264 [info]: using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2 UnalignedStack
+x264 [info]: profile Main, level 3.1, 4:2:0, 8-bit
+[11:43:35] sync: first pts video is 0
+[11:43:35] sync: "Cap­tulo 1" (1) at frame 1 time 0
+[11:43:41] reader: done. 1 scr changes
+[11:43:42] work: average encoding speed for job is 202.461060 fps
+[11:43:42] comb detect: heavy 208 | light 688 | uncombed 337 | total 1233
+[11:43:42] decomb: deinterlaced 208 | blended 688 | unfiltered 337 | total 1233
+[11:43:42] vfr: 1233 frames output, 0 dropped and 0 duped for CFR/PFR
+[11:43:42] vfr: lost time: 0 (0 frames)
+[11:43:42] vfr: gained time: 0 (0 frames) (0 not accounted for)
+[11:43:42] h264-decoder done: 1233 frames, 0 decoder errors
+[11:43:42] sync: got 1233 frames, 1233 expected
+[11:43:42] sync: framerate min 29.970 fps, max 29.970 fps, avg 29.970 fps
+x264 [info]: frame I:5     Avg QP:20.53  size:114879
+x264 [info]: frame P:308   Avg QP:23.14  size: 13780
+x264 [info]: frame B:920   Avg QP:24.72  size:   752
+x264 [info]: consecutive B-frames:  0.4%  0.0%  1.0% 98.6%
+x264 [info]: mb I  I16..4: 29.1%  0.0% 70.9%
+x264 [info]: mb P  I16..4:  1.1%  0.0%  0.0%  P16..4: 34.2% 11.6%  6.2%  0.0%  0.0%    skip:46.8%
+x264 [info]: mb B  I16..4:  0.0%  0.0%  0.0%  B16..8:  3.5%  0.9%  0.1%  direct: 1.6%  skip:93.9%  L0:21.0% L1:44.4% BI:34.5%
+x264 [info]: coded y,uvDC,uvAC intra: 50.6% 59.7% 28.7% inter: 5.2% 2.7% 0.0%
+x264 [info]: i16 v,h,dc,p: 12% 58% 17% 13%
+x264 [info]: i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 14% 26% 20%  4%  9%  5%  7%  5%  9%
+x264 [info]: i8c dc,h,v,p: 50% 32% 12%  6%
+x264 [info]: Weighted P-Frames: Y:0.3% UV:0.0%
+x264 [info]: kb/s:1071.48
+[11:43:42] mux: track 0, 1233 frames, 5510048 bytes, 1070.58 kbps, fifo 2048
+[11:43:42] Finished work at: Sat Sep 16 11:43:42 2023
+[11:43:42] libhb: work result = 0
+
+ # Job Completed!
+
