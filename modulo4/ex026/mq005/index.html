@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Media Query</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+  <header>
+    <h1>Black Desert</h1>
+    <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
+    <menu id="itens">
+      <ul>
+        <li><a href="#">Opção 1</a></li>
+        <li><a href="#">Opção 2</a></li>
+        <li><a href="#">Opção 3</a></li>
+        <li><a href="#">Opção 4</a></li>
+        <li><a href="#">Opção 5</a></li>
+      </ul>
+    </menu>
+  </header>
+  <main>
+    <article>
+      <h2>Oásis dos aventureiros São Paulo</h2>
+
+      <p id="p1">
+        Período de Inscrição <br>
+        16 de dezembro de 2023 (qua.) ~ 3 de janeiro de 2024 (qua.) 02:59 (UTC-3) <br>     
+        No formulário, compartilhe uma história ou memória favorita durante a sua jornada em Black Desert. <br>
+        *Se selecionado, você também será contatado individualmente por e-mail para preencher um formulário de confirmação de presença. <br>
+        *Se não conseguirmos entrar em contato com você, seu convite pode ser revogado e será oferecido ao próximo Aventureiro disponível.
+      </p>
+
+      <p>Additional Notices
+        - Os Aventureiros selecionados serão anunciados em um aviso separado. <br>        
+        - Se selecionado, você também será contatado individualmente por e-mail para preencher um formulário de confirmação de presença; portanto, certifique-se de que digitou corretamente seu endereço de e-mail no formulário. Você deve preencher o formulário de confirmação de presença para garantir um lugar. <br>        
+        - Apenas os participantes selecionados (e acompanhante, se elegível) têm permissão para comparecer a este evento; você não pode transferir ou vender seu convite para outra pessoa. <br>        
+        - Você consente a coleta e uso das informações fornecidas em sua inscrição com o objetivo de determinar sua qualificação. No caso de as informações coletadas na pesquisa acima não corresponderem, sua entrada pode ser anulada. Certifique-se de que todas as informações estejam corretas antes de enviar. <br>        
+        - Se não conseguirmos entrar em contato com você, seu convite pode ser revogado e será oferecido ao próximo Aventureiro disponível. <br>        
+        - A Pearl Abyss nunca pedirá a senha da sua conta. Por favor, não interaja se receber qualquer mensagem desse tipo. <br>        
+        - Por favor, traga um documento de identificação válido no momento do evento. No caso de não conseguirmos verificar suas informações, sua entrada será negada. <br>     
+        - Despesas (como despesas de viagem) não são elegíveis para compensação e não serão financiadas pela Pearl Abyss.        
+        - Durante o evento, solicitamos um acordo para a coleta e uso de informações pessoais, bem como um Certificado de Recebimento para entrega de prêmios. <br> 
+        - Somente os participantes selecionados têm permissão para comparecer a este evento; você não pode transferir ou vender seu convite para outra pessoa. <br>
+        - Ao participar da audiência do Oasis dos Aventureiros - São Paulo, seu rosto e semelhança podem ser exibidos publicamente em conteúdos de relações públicas pós-evento, site oficial, etc. Se você se inscrever para participar deste evento, será considerado como dando seu acordo/consentimento para o uso de sua imagem/direitos de publicidade. <br>      
+        - No caso de as informações pessoais coletadas na pesquisa acima serem falsas ou enviadas de maneira inadequada, os prêmios podem ser removidos, e você pode ser restrito de acessar o jogo. <br>
+        - Se sua conta estiver restrita antes do evento devido à violação da Política Operacional, etc., sua entrada pode ser revogada, e os prêmios removidos. <br>   
+        - A Pearl Abyss reserva-se o direito de alterar ou cancelar o evento dependendo das circunstâncias atenuantes. Se forem feitas alterações, elas podem ser encontradas nesta página do evento. <br>
+        - A Pearl Abyss reserva-se o direito de alterar o conteúdo dos itens por um prêmio diferente de valor semelhante sem aviso prévio.
+      </p>
+    </article>
+  </main>
+
+  <script>
+    function clickMenu() {
+       var itens = document.getElementById('itens');
+       if (itens.style.display === 'block') {
+            itens.style.display = 'none';
+       } else {
+            itens.style.display = 'block';
+       }
+    }
+</script>
+</body>
+</html>
